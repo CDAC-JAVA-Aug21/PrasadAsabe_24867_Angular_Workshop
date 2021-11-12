@@ -1,0 +1,42 @@
+
+<div>
+    <h2> Yesterday's Chores </h2>
+    <!--<p *ngFor = "let chore of chores; let i=index">{{i+1}} . {{chore}}</p>-->
+    <!--<p *ngFor = "let chore2 of chores2; let j=index">{{j+1}} . {{chore2.task}}</p>-->
+    <p *ngFor = "let ychore of yesterdayChore; let i=index">{{i+1}} . {{ychore}}</p>
+    <hr>
+    <h2> Today's Chores </h2>
+    <p *ngFor = "let tchore of todayChore; let i=index">{{i+1}} . {{tchore}}</p>
+    <hr>
+    <h2> Tomorrow's Chores </h2>
+    <p *ngFor = "let tomchore of tomorrowChore; let i=index">{{i+1}} . {{tomchore}}</p>
+    <hr>
+
+    <div class="done">
+        <h2> Done Chores </h2>
+        <p *ngFor = "let donechore of doneChore; let i=index">{{i+1}} . {{donechore}}</p>
+        <p hidden>{{chorelength}}</p>
+        <p hidden>{{donechorelength}}</p>
+        <p>{{diff}}</p>
+    </div>
+
+    <div *ngIf="0 > diff" class="lagging">
+        work harder !!!
+    </div>
+
+    <div *ngIf="chorelength != 0 &&  diff >= 3" class="lagging">
+        <img src="https://zebrahelmets.com/wp-content/uploads/2020/03/m-1.png" id="targetimg">
+    </div>
+
+    <div *ngIf="3 > diff" class="noallowance">
+        <p>No allowance yet </p>
+    </div>
+
+    <div *ngIf="chorelength == 0 &&  diff >= 3" class="treat">
+        <h2>Icecream treat !!!</h2>
+    </div>
+
+
+
+   
+</div>

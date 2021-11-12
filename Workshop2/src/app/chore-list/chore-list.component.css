@@ -1,0 +1,25 @@
+div {
+  color: violet;
+}
+
+.done {
+  color: green;
+}
+
+.lagging {
+  color: red;
+}
+
+#targetimg {
+  height: 100px;
+  width: 100px;
+}
+
+.noallowance {
+  color: #ffd000;
+}
+
+.treat {
+  color: orange;
+}
+/*# sourceMappingURL=chore-list.component.css.map */
