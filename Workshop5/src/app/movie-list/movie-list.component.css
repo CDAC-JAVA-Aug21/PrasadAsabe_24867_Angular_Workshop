@@ -1,0 +1,16 @@
+.movie h3 {
+  color: blue;
+}
+
+.movie h5 {
+  color: #6565dd;
+}
+
+.wmovie h3 {
+  color: orangered;
+}
+
+.wmovie h5 {
+  color: #f58359;
+}
+/*# sourceMappingURL=movie-list.component.css.map */
